@@ -4,8 +4,6 @@
 /dist
 /tmp
 /out-tsc
-# Only exists if Bazel was run
-/bazel-out
 
 # dependencies
 /node_modules
@@ -14,14 +12,6 @@
 chrome-profiler-events*.json
 speed-measure-plugin*.json
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
 
 # IDE - VSCode
 .vscode/*
