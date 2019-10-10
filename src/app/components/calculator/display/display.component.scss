@@ -1,0 +1,14 @@
+@import "../../../../assets/board-matrix";
+
+:host {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+  height: 5vh;
+
+  .span-5 {
+    flex: 0 0 620px;
+  }
+}

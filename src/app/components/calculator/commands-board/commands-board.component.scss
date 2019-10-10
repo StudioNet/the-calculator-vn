@@ -1,0 +1,9 @@
+@import "../../../../assets/board-matrix";
+
+:host {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-content: center;
+}
