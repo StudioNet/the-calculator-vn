@@ -11,8 +11,4 @@ export class AppPage {
       string
     >;
   }
-
-  getMainNVersionButtonText() {
-    return element(by.id("btnNVersion")).getText() as Promise<string>;
-  }
 }
