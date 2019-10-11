@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AppComponent implements OnInit {
   title = "Calculator N-Version";
+  calculatorMode = "Scientific";
 
   ngOnInit(): void {
     document.title = this.title;
