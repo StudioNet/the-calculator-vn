@@ -1,5 +1,5 @@
 :host {
-  flex: 1 0 75%;
+  flex: 1 0 20%;
   margin-top: 10px;
   margin-left: 0px;
   margin-right: 3px;
@@ -12,9 +12,10 @@
   text-align: justify;
 }
 
-.commands {
-  flex: 1 0 30%;
+.results {
+  flex: 0 0 100%;
   height: 80vh;
+  margin-left: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
 }
