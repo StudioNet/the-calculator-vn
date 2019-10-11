@@ -1,0 +1,29 @@
+:host {
+  flex: 0 0 auto;
+  color: white;
+  background-color: lightslategray;
+  height: 60px;
+  font-size: 1.6em;
+  text-align: center;
+  align-self: stretch;
+
+  button {
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    margin: 5px;
+    margin-left: 100px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+
+    img {
+      width: 30px;
+    }
+  }
+}
