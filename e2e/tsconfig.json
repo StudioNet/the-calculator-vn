@@ -1,10 +1,10 @@
 {
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../out-tsc/e2e",
     "module": "commonjs",
     "target": "es5",
-    "types": ["jasmine", "cucumber", "node"]
+    "outDir": "../out-tsc/e2e",
+    "types": ["chai", "cucumber", "node"]
   }
 }
 //["jasmine", "jasminewd2", "node"]
