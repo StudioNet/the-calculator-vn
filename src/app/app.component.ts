@@ -12,4 +12,9 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     document.title = this.title;
   }
+
+  handleCalculatorModeChanged(mode: string) {
+    this.calculatorMode = mode;
+    // TODO: Dispatch the store about mode changing
+  }
 }
