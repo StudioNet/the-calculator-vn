@@ -1,10 +1,18 @@
-<div id="container">
-  <div id="container-wrapper">
+<div class="display container-fluid">
+  <div class="header">
     <sn-header
       (onCalculatorTypeSelected)="handleCalculatorModeChanged($event)"
     ></sn-header>
-    <sn-calculator mode="calculatorMode"></sn-calculator>
-    <sn-results></sn-results>
+  </div>
+  <div class="content">
+    <div class="calculator">
+      <sn-calculator mode="calculatorMode"></sn-calculator>
+    </div>
+    <div class="results">
+      <sn-results></sn-results>
+    </div>
+  </div>
+  <div class="footer">
     <footer>
       <div>
         Icons made by
@@ -19,3 +27,6 @@
     </footer>
   </div>
 </div>
+
+<!--
+ -->

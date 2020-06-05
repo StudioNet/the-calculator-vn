@@ -15,6 +15,10 @@ export class AppComponent implements OnInit {
 
   handleCalculatorModeChanged(mode: string) {
     this.calculatorMode = mode;
+    this.changeCalculatorMode();
+  }
+
+  private changeCalculatorMode() {
     // TODO: Dispatch the store about mode changing
   }
 }
