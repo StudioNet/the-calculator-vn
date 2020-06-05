@@ -4,21 +4,23 @@
   background-color: lightslategray;
   height: 60px;
   font-size: 1.6em;
-  text-align: center;
+  text-align: left;
   align-self: stretch;
+  display: flex;
+  flex-direction: row;
+
+  & .header-title {
+    flex: 5 0 auto;
+  }
 
   button {
-    width: 45px;
-    height: 45px;
-    padding: 0;
+    flex: 1 0 0;
+    order: 2;
     margin: 5px;
-    margin-left: 100px;
-    box-sizing: border-box;
     border: none;
     font-size: 30px;
     line-height: 30px;
     border-radius: 50%;
-    font-weight: 700;
     cursor: pointer;
     outline: none;
 
@@ -26,4 +28,5 @@
       width: 30px;
     }
   }
+
 }

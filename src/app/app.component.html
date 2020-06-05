@@ -1,25 +1,18 @@
-<div id="container">
-  <div id="container-wrapper">
-    <header>
-      <div class="row title">
-        <h2>Magnetic Calculation Component</h2>
-      </div>
-      <div class="row calculator-types">
-        <ul class="calculator-type-list">
-          <li class="calculator-type-list-item">
-            <button class="btn btn-primary btn-light btn-lg">Standart</button>
-          </li>
-          <li class="calculator-type-list-item">
-            <button class="btn btn-primary btn-light btn-lg">Scientific</button>
-          </li>
-          <li class="calculator-type-list-item">
-            <button class="btn btn-primary btn-light btn-lg">Programmer</button>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <sn-calculator mode="calculatorMode"></sn-calculator>
-    <sn-results></sn-results>
+<div class="display container-fluid">
+  <div class="header">
+    <sn-header
+      (onCalculatorTypeSelected)="handleCalculatorModeChanged($event)"
+    ></sn-header>
+  </div>
+  <div class="content">
+    <div class="calculator">
+      <sn-calculator mode="calculatorMode"></sn-calculator>
+    </div>
+    <div class="results">
+      <sn-results></sn-results>
+    </div>
+  </div>
+  <div class="footer">
     <footer>
       <div>
         Icons made by
@@ -34,3 +27,6 @@
     </footer>
   </div>
 </div>
+
+<!--
+ -->

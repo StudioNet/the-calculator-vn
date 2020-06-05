@@ -1,20 +1,6 @@
 :host {
   flex: 1 0 75%;
-  margin-top: 10px;
-  margin-left: 0px;
-  margin-right: 3px;
-  padding: 5px;
   display: flex;
-  // flex-flow: column nowrap;
-  // justify-content: center;
-  /*Styles for sample presentation*/
-  border: 1px solid maroon;
-  text-align: justify;
-}
-
-.commands {
-  flex: 1 0 30%;
+  flex-direction: column;
   height: 80vh;
-  display: flex;
-  flex-flow: row wrap;
 }

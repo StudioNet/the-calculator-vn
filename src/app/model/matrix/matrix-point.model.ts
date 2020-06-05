@@ -16,4 +16,6 @@ export class MatrixPoint {
     thePoint.visible = visible;
     return thePoint;
   }
+
+  start() {}
 }

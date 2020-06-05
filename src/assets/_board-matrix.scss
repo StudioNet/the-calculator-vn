@@ -1,75 +1,81 @@
 //Matrix point styling
-.box {
-  width: 120px;
-  height: 120px;
-  // border: 1px solid grey;
-  margin: 2px;
 
-  .btn-base-command {
-    width: 100px;
-    height: 100px;
-    float: left;
-    padding: 0;
-    margin: 5px;
-    box-sizing: border-box;
-    border: none;
-    font-size: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-    font-weight: 700;
-    color: #5e5858;
-    cursor: pointer;
-    outline: none;
+.matrix-row {
+  display: flex;
+  flex-direction: row;
+  margin-left: 25px;
 
-    img {
-      width: 40px;
+  .box {
+    width: 120px;
+    height: 120px;
+    margin: 2px;
 
-      &.turn-left {
-        transform: rotate(-90deg);
-      }
-    }
-  }
-
-  .display {
-    height: 100px;
-    padding: 40px 0;
-    background: #ff0509;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
-
-    .input-text {
-      width: 650px;
-      height: 60px;
+    .btn-base-command {
+      width: 100px;
+      height: 100px;
+      float: left;
       padding: 0;
+      margin: 5px;
       box-sizing: border-box;
-      outline: none;
       border: none;
-      background: none;
-      color: white;
-      text-align: right;
+      font-size: 40px;
+      line-height: 40px;
+      border-radius: 50%;
       font-weight: 700;
-      font-size: 60px;
-      line-height: 60px;
-      margin: 0 25px;
+      color: #5e5858;
+      cursor: pointer;
+      outline: none;
 
-      &::placeholder {
-        color: #ffffff;
+      img {
+        width: 40px;
+
+        &.turn-left {
+          transform: rotate(-90deg);
+        }
       }
     }
-  }
 
-  .btn-number {
-    background: #ecedef;
-  }
+    & .display {
+      height: 120px;
+      padding: 40px 0;
+      background: lightslategray;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
 
-  .btn-command {
-    background-color: cadetblue;
-    color: #ffffff;
-  }
+      .input-text {
+        width: 650px;
+        height: 60px;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        background: none;
+        color: white;
+        text-align: right;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0 25px;
 
-  .btn-equal {
-    background-color: #ff0509;
-    color: #ffffff;
+        &::placeholder {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .btn-number {
+      background: #ecedef;
+    }
+
+    .btn-command {
+      background-color: cadetblue;
+      color: #ffffff;
+    }
+
+    .btn-equal {
+      background-color: #2fc721;
+      color: #ffffff;
+    }
   }
 }

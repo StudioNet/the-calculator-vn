@@ -11,8 +11,9 @@ import {
 // const element = require("protractor").element;
 // const by = require("protractor").by;
 
-export class AppPage {
+export class HeaderPageObject {
   private typesList: ElementArrayFinder;
+  private lastModeSelected: string;
 
   navigateTo() {
     return browser.get(browser.baseUrl);
@@ -34,18 +35,31 @@ export class AppPage {
   }
 
   async isTypeExist(type: string): promise.Promise<boolean> {
-    const typeItem = this.typesList
+    return this.findType(type).isDisplayed();
+  }
+
+  async selectMode(mode: string): promise.Promise<void> {
+    const selectedType = this.findType(mode);
+    return selectedType.click().then(() => {
+      return selectedType.getText().then(type => {
+        this.lastModeSelected = type;
+      });
+    });
+  }
+
+  async getSelectedMode(): promise.Promise<string> {
+    return promise.Promise.resolve(this.lastModeSelected);
+  }
+
+  private findType(type: string): ElementFinder {
+    return this.typesList
       .filter((el, idx) => {
         return el.getText().then(typeName => typeName === type);
       })
       .first();
-
-    return typeItem.isDisplayed();
   }
 
   private isTypeListExist(): boolean {
     return this.typesList != null;
   }
 }
-
-// module.exports = AppPage;
